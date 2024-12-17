@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navigation bar  */
+/* logo and image  */
+#logo{
+    margin: 10px 32px;  
+}
+#logo h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-feature-settings: "akhn";
+}
+
+#logo img{
+    height: 74px;
+    border-radius: 90px;
+    margin: 3px 10px;
+    
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+position: fixed;
+    top: 0%;
+    background-color: #261b1b;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(146, 142, 142);
+    width: 100%;
+    height: 430px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+#navbar ul input{
+    margin-left: 550px;
+    height: 40px;
+    width: 210px;
+    border-radius: 20px;
+    color: green;
+    background: black;
+    font-weight: bold;
+    
+}
+#navbar ul button{
+    border-radius: 20px; 
+    height: 40px;
+    color: green;
+    background: black;
+    font-weight: bold;
+}
+#navbar ul{
+  display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+#navbar ul li a{
+    color: aliceblue;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:rgb(23, 219, 27);
+    background-color: rgb(20, 17, 17);
+    
+   
+}
+/* home section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 729px;
+    justify-content: center;
+    align-items: center;
+}
+#Home::before{
+    content: "";
+    background-image: url('https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#Home h1{
+    color: rgb(16, 176, 229);
+    text-align: center;
+}
+#Home p{
+    color: rgb(30, 202, 59);
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.heading{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    position: relative;
+background-color:darkgray;
+border: 3px solid gray;
+color: white;
+margin: 17px;
+font-size: 1.4rem;
+border-radius: 10px;
+cursor: pointer;
+}
+.btn:hover{
+    
+    color: rgb(56, 213, 85);
+    background-color: rgb(6, 8, 9);
+    transform:translate(-5px);
+}
+
+/* sevices section  */
+#h-primary{
+    text-align: center;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2.8rem;
+}
+.secondary{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sevices{
+    margin: 34px;
+    display: flex;
+}
+#sevices .box{
+    border: 2px solid brown;
+      padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(154, 158, 161); 
+}
+#sevices .box p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+#sevices .box img{
+    height: 100px; 
+    display: block;
+    margin: auto;
+    filter:drop-shadow(10px 10px 70px rgb(205, 25, 49))
+
+}
+/* client section  */
+#client-section{
+position: relative;
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute
+    ;
+    background: url('https://images.pexels.com/photos/1964471/pexels-photo-1964471.jpeg?auto=compress&cs=tinysrgb&w=600');
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#client-section .h-primary{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 100px;
+}
+/* contact  section*/
+#contact{
+    position: relative;
+    margin-top: -175px;
+    background: url('https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+#contact ::before{
+    content: "";
+    position: absolute;
+    /* background: url('https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* height: 100%;
+    width: 98%; */
+    z-index: -1;
+    opacity: o.4;
+}
+#contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ #contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+
+
+
+
+
+/* footer  */
+footer{ 
+    background: black;
+    color: white;
+    padding: 9px 20px;
+} 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+body{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #0c112c;  
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 8, 8);
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.box h1{
+    color: white;
+
+
+    
+    text-shadow: 2px 2px black;
+    font-size: 6em;
+    z-index: 2;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    height: 140%;
+    width: 160px;
+    background: linear-gradient(#00ccff,#d500f9);
+    animation: rotate 3s linear infinite;   
+}
+.box::after{
+    content: '';
+    position: absolute;
+    background: #0e1538;
+    border-radius: 16px;
+    inset:5px;
+}
+@keyframes rotate {
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Anish</h1>
+    </div>
+</body>
+</html>
